@@ -1,3 +1,33 @@
+# Resume Analyzer (minimal scaffold)
+
+This is a minimal scaffold for the AI Resume Analyzer project. It provides a simple Express server with a stubbed `/analyze` endpoint.
+
+Quick start
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the server:
+
+```bash
+npm start
+```
+
+Example request:
+
+```bash
+curl -X POST http://localhost:3000/analyze \
+  -H "Content-Type: application/json" \
+  -d '{"resume":"Experienced software engineer...","job":"Backend engineer"}'
+```
+
+Next steps:
+
+- Replace `src/llm.js` with a real LLM integration (OpenAI/Claude)
+- Add persistence, caching, and background job processing
 # AI Resume Analyzer
 
 AI Resume Analyzer is a backend-focused learning project for understanding how production AI systems are built, scaled, and protected in the real world.
